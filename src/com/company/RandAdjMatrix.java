@@ -20,7 +20,7 @@ public class RandAdjMatrix {
 
             int a = (int) (Math.random() * n + 1);
             int b = (int) (Math.random() * n + 1);
-            int weight = (int) (Math.random() * 200 + 1);
+            int weight = (int) (Math.random() * 20 + 1);
 
             if (matrix[a][b] == 0 && a != b) {
                 egdes ++;
