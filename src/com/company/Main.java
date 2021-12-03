@@ -19,24 +19,10 @@ public class Main {
 
         deleteFolder(new File("D:\\Univer\\FCIM_SEM_3\\Analiza si proiectarea algoritmilor (APA)\\Laborator_4_V4"));
 
-        int n = 9;
+        int n = 10;
         int start = 1;
 
-//        int[][] matrix = new RandAdjMatrix(n).getMatrix(Cazuri.RAR);
-        int a = 1_000_000;
-
-        int[][] matrix = new int[][] {
-                {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-                {0, 0, 2, 5, 2, a, a, a, a, a},
-                {0, 2, 0, 3, a, 1, a, a, a, a},
-                {0, 5, 3, 0, 3, 1, 1, a, 1, a},
-                {0, 2, a, 3, 0, a, a, 2, a, a},
-                {0, a, 1, 1, a, 0, a, a, a, 7},
-                {0, a, a, 1, a, a, 0, 2, 3, a},
-                {0, a, a, a, 2, a, 2, 0, a, a},
-                {0, a, a, 1, a, a, 3, a, 0, 1},
-                {0, a, a, a, a, 7, a, a, 1, 0}
-        };
+        int[][] matrix = new RandAdjMatrix(n).getMatrix(Cazuri.RAR);
 
         Dijkstra dijkstra = new Dijkstra(n, matrix);
         long time1 = System.nanoTime();
