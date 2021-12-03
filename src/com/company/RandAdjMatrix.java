@@ -14,7 +14,7 @@ public class RandAdjMatrix {
 
         double phi = getCaz(caz);
         int egdes = 0;
-        int totalEgdes = n * (n + 1);
+        int totalEgdes = n * (n - 1);
 
         while ((double) egdes / totalEgdes < phi) {
 
